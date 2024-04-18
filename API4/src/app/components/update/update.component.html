@@ -1,0 +1,36 @@
+<div class="update-form-container">
+    <ng-container *ngIf="!isUpdated">
+      <button class="find-user-button" (click)="getById()">
+        <span class="button-text">Find User</span>
+        <i class="pi pi-check button-icon"></i>
+      </button>
+      <div class="form-fields">
+        <div class="input-field">
+          <input pInputText id="id" placeholder="Enter ID" [(ngModel)]="myId" name="myId" />
+        </div>
+        <div class="input-field">
+          <input pInputText id="name" placeholder="Enter Name" [(ngModel)]="setValue.fullName" name="name" />
+        </div>
+        <div class="input-field">
+          <input pInputText id="email" placeholder="Enter Email" [(ngModel)]="setValue.email" name="email"/>
+        </div>
+        <div class="input-field">
+          <input pInputText id="login" placeholder="Enter Login" [(ngModel)]="setValue.login" name="login" />
+        </div>
+        <div class="input-field">
+          <input type="password" pInputText id="password" placeholder="Enter Password" [(ngModel)]="setValue.password" name="password" />
+        </div>
+        <div class="input-field">
+          <input pInputText id="role" placeholder="Enter Role" [(ngModel)]="setValue.role" name="role" />
+        </div>
+      </div>
+      <button class="submit-button" (click)="setUser()">
+        <span class="button-text">Submit</span>
+        <i class="pi pi-check button-icon"></i>
+      </button>
+    </ng-container>
+    <ng-container *ngIf="isUpdated">
+      <h1>Malumotlar yangilandi</h1>
+    </ng-container>
+  </div>
+  

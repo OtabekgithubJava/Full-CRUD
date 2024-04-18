@@ -1,0 +1,27 @@
+<div class="form-container" [ngClass]="{'submitted': isSubmitted}">
+    <div class="form-content">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input pInputText id="username" [(ngModel)]="setValue.fullName" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input pInputText id="email" [(ngModel)]="setValue.email" />
+      </div>
+      <div class="form-group">
+        <label for="login">Login</label>
+        <input pInputText id="login" [(ngModel)]="setValue.login" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" pInputText id="password" [(ngModel)]="setValue.password" />
+      </div>
+      <div class="form-group">
+        <label for="role">Role</label>
+        <input pInputText id="role" [(ngModel)]="setValue.role" />
+      </div>
+      <button pButton type="button" label="Submit" icon="pi pi-check" (click)="start()" iconPos="right">Create</button>
+    </div>
+    <div class="submitted-message" *ngIf="isSubmitted">Data Created</div>
+  </div>
+  

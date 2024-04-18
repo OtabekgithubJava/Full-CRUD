@@ -1,0 +1,19 @@
+<div class="delete-confirmation">
+    <ng-container *ngIf="!isDeleted">
+      <div class="input-container">
+        <span class="p-float-label">
+          <input pInputText id="password" [(ngModel)]="myId" />
+          <label for="password" aria-placeholder="Enter the ID"></label>
+        </span>
+      </div>
+      <div class="button-container">
+        <button class="p-button p-button-success" (click)="delete()">
+          <span class="button-text">Submit</span>
+          <i class="pi pi-check button-icon"></i>
+        </button>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="isDeleted">
+      <h1>Deleted</h1>
+    </ng-container>
+  </div>  

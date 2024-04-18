@@ -1,0 +1,40 @@
+.user-details-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #f4f4f4, #e0e0e0);
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-group button {
+    border-radius: 0 5px 5px 0;
+}
+
+.user-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.info-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.not-found {
+    text-align: center;
+    color: red;
+}

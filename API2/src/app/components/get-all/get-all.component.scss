@@ -1,0 +1,34 @@
+.unique-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; 
+}
+
+.unique-table th,
+.unique-table td {
+  padding: 12px;
+  border: none; 
+  background-color: #f8f8f8; 
+  text-align: center;
+}
+
+.unique-table th {
+  background-color: #555; 
+  color: #fff;
+}
+
+.unique-table tbody tr {
+  transition: background-color 0.3s;
+}
+
+.unique-table tbody tr:hover {
+  background-color: #f0f0f0; 
+}
+
+.unique-table .even-row {
+  background-color: #f0f8ff;
+}
+
+.unique-table .odd-row {
+  background-color: #e6e6fa;
+}

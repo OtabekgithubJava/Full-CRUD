@@ -1,0 +1,30 @@
+<div class="submit-form">
+    <div class="form-group">
+        <label for="userId">User ID</label>
+        <input type="number" class="form-control" [(ngModel)]="myId" id="userId">
+    </div>
+
+    <div class="form-actions">
+        <button class="btn btn-success" (click)="getById()">Find User</button>
+        <button class="btn btn-danger" (click)="deleteUserById()">Delete User</button>
+    </div>
+
+    <div class="user-details" *ngIf="!isDeleted">
+        <div class="detail">
+            <label for="fullName">Full Name</label>
+            <span>{{user.fullName}}</span>
+        </div>
+        <div class="detail">
+            <label for="email">Email</label>
+            <span>{{user.email}}</span>
+        </div>
+        <div class="detail">
+            <label for="role">Role</label>
+            <span>{{user.role}}</span>
+        </div>
+    </div>
+
+    <div class="success-message" *ngIf="isDeleted">
+        <h1>Ma'lumotlar muvaffaqiyatli o'chirildi</h1>
+    </div>
+</div>

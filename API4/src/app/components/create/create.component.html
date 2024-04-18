@@ -1,0 +1,32 @@
+<form class="submit-form">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="form-control" [(ngModel)]="setValue.fullName" />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" [(ngModel)]="setValue.email" />
+    </div>
+
+    <div class="form-group">
+        <label for="login">Login</label>
+        <input type="text" id="login" class="form-control" [(ngModel)]="setValue.login" />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" [(ngModel)]="setValue.password" />
+    </div>
+
+    <div class="form-group">
+        <label for="role">Role</label>
+        <input type="text" id="role" class="form-control" [(ngModel)]="setValue.role" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="start()">Submit</button> 
+</form>
+
+<div class="success-message" *ngIf="isSubmited">
+    <h1>Malumotlar yaratildi</h1>
+</div>

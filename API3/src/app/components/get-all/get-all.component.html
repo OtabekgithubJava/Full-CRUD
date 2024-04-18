@@ -1,0 +1,17 @@
+<div class="modern-table">
+    <div class="table-header">
+      <div>ID</div>
+      <div>Full Name</div>
+      <div>Email</div>
+      <div>Role</div>
+    </div>
+    <div class="table-body">
+      <div *ngFor="let user of users" class="table-row">
+        <div>{{ user.userId }}</div>
+        <div>{{ user.fullName }}</div>
+        <div>{{ user.email }}</div>
+        <div>{{ user.role }}</div>
+      </div>
+    </div>
+  </div>
+  

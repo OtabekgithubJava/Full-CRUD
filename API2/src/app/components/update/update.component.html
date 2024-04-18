@@ -1,0 +1,36 @@
+<form class="submit-form">
+    <div class="form-group">
+        <label for="id">ID</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="id" placeholder="Enter ID" [(ngModel)]="myId" name="id">
+            <button class="btn btn-success" (click)="getById()">Find User</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" value="{{ user.fullName }}" [(ngModel)]="setValue.fullName" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" value="{{ user.email }}" [(ngModel)]="setValue.email" name="email">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" value="{{ user.password }}" [(ngModel)]="setValue.password" name="password">
+    </div>
+
+    <div class="form-group">
+        <label for="login">Login</label>
+        <input type="text" class="form-control" id="login" placeholder="Enter login" value="{{ user.login }}" [(ngModel)]="setValue.login" name="login">
+    </div>
+
+    <div class="form-group">
+        <label for="role">Role</label>
+        <input type="text" class="form-control" id="role" placeholder="Enter role" value="{{ user.role }}" [(ngModel)]="setValue.role" name="role">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block" (click)="setUser()">Submit</button>
+</form>

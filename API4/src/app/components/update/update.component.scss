@@ -1,0 +1,69 @@
+.update-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .find-user-button,
+  .submit-button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .find-user-button:hover,
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-text {
+    margin-right: 5px;
+  }
+  
+  .button-icon {
+    font-size: 18px;
+  }
+  
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .input-field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-field input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+  }
+  
+  .input-field input:focus + label,
+  .input-field input:not(:placeholder-shown) + label {
+    font-size: 12px;
+    top: 5px;
+    color: #333;
+  }
+  

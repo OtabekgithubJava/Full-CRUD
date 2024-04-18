@@ -1,0 +1,28 @@
+.modern-table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .table-header,
+  .table-body {
+    display: flex;
+  }
+  
+  .table-header > div,
+  .table-body > div {
+    flex: 1;
+    padding: 12px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ddd;
+  }
+  
+  .table-body > div {
+    border-top: 1px solid #ddd;
+  }
+  
+  .table-row:last-child > div {
+    border-bottom: 1px solid #ddd;
+  }
+  
